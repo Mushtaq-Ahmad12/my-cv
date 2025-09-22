@@ -4,100 +4,130 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Mushtaq Ahmad — CV</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .cv-container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 15px;
+    }
+    .section-title {
+      border-bottom: 2px solid #0d6efd;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+    .badge {
+      margin: 3px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #6c757d;
+      background: #f1f3f5;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <div class="card">
-      <div>
-        <div class="photo" aria-hidden="true">
-          
-          <img src="c:\Users\hp\3D Objects\WhatsApp Image 2024-09-23 at 21.17.24_173e8f62.jpg" alt="Profile photo of Mushtaq Ahmad">
+  <div class="cv-container">
+    <div class="row g-0">
+      <!-- Left Sidebar -->
+      <div class="col-md-4 bg-primary text-white p-4 text-center">
+        <img src="c:\Users\hp\3D Objects\WhatsApp Image 2024-09-23 at 21.17.24_173e8f62.jpg" 
+             alt="Profile photo of Mushtaq Ahmad" 
+             class="profile-photo">
+        <h2 class="mt-2">Mushtaq Ahmad</h2>
+        <p class="fw-light">Aspiring Machine Learning Engineer<br>BS(IT) Student</p>
+
+        <hr class="border-light">
+
+        <h5>Contact</h5>
+        <p class="small">
+          📧 <a href="mailto:mushtaqinahmad@gmail.com" class="text-white">mushtaqinahmad@gmail.com</a><br>
+          📱 +92 0323 9102963<br>
+          📍 Near Agriculture University, Pakistan
+        </p>
+
+        <h5>Languages</h5>
+        <div>
+          <span class="badge bg-light text-dark">English</span>
+          <span class="badge bg-light text-dark">Urdu</span>
+          <span class="badge bg-light text-dark">Pashto</span>
         </div>
-        <div class="section">
-          <h2>Contact</h2>
-          <p class="muted">Email: <a href="mushtaqinahmad@gmail.com">mushtaqinahmad@gmail.com</a><br>
-          Phone: +92 0323 9102963<br>
-          Location: Near Agriculture University, Pakistan</p>
-        </div
-        <div class="section">
-          <h2>Languages</h2>
-          <div class="chips">
-            <span class="chip">English</span>
-            <span class="chip">Urdu</span>
-            <span class="chip">Pashto</span>
-          </div>
-        </div>
-        
-          <h2>Skills</h2>
-          <div class="chips">
-            <span class="chip">Python (basic)</span>
-            <span class="chip">Machine Learning (student)</span>
-            <span class="chip">Pandas / NumPy</span>
-            <span class="chip">Data Analysis</span>
-            <span class="chip">Git / GitHub</span>
-          </div>
+
+        <h5 class="mt-3">Skills</h5>
+        <div>
+          <span class="badge bg-secondary">Python (basic)</span>
+          <span class="badge bg-secondary">Machine Learning (student)</span>
+          <span class="badge bg-secondary">Pandas / NumPy</span>
+          <span class="badge bg-secondary">Data Analysis</span>
+          <span class="badge bg-secondary">Git / GitHub</span>
         </div>
       </div>
 
-      <div>
-        <header>
-          <h1>Mushtaq Ahmad</h1>
-          <p class="title">Aspiring Machine Learning Engineer · BS(IT) Student</p>
-          
-        </header>
-
-        <section class="section">
-          <h2>Professional Summary</h2>
-          <p class="muted">Motivated BS(IT) student at Agriculture University Peshawar with a 3.6 CGPA, strong foundation in Python and basic machine learning concepts. Completed academic projects including a simulated coffee machine using Python. Seeking internship or junior roles to apply and grow practical ML skills.</p>
+      <!-- Right Content -->
+      <div class="col-md-8 p-4">
+        <section>
+          <h4 class="section-title">Professional Summary</h4>
+          <p>Motivated BS(IT) student at Agriculture University Peshawar with a 3.6 CGPA, strong foundation in Python and basic machine learning concepts. Completed academic projects including a simulated coffee machine using Python. Seeking internship or junior roles to apply and grow practical ML skills.</p>
         </section>
 
-        <section class="section">
-          <h2>Education</h2>
-          <div class="education-item">
-            <strong>BS(IT)</strong><br>
-            Agriculture University Peshawar<br>
-            <span class="muted">2023 — 2027 · CGPA: 3.6</span>
-          </div>
+        <section>
+          <h4 class="section-title">Education</h4>
+          <p><strong>BS(IT)</strong><br>
+          Agriculture University Peshawar<br>
+          <span class="text-muted">2023 — 2027 · CGPA: 3.6</span></p>
         </section>
 
-        <section class="section">
-          <h2>Projects</h2>
-          <div class="project">
-            <strong>Basic Python — Coffee Machine (Academic Project)</strong>
-            <p class="muted">Implemented a text-based coffee machine simulator in Python that models inventory, drink selection, and simple order processing. Focus on control flow, functions, and basic file I/O to persist inventory.</p>
-            <ul>
-              <li>Languages: Python</li>
-              <li>Concepts: Functions, I/O, state management</li>
-            </ul>
-          </div>
+        <section>
+          <h4 class="section-title">Projects</h4>
+          <p><strong>Basic Python — Coffee Machine (Academic Project)</strong></p>
+          <p class="text-muted">Implemented a text-based coffee machine simulator in Python that models inventory, drink selection, and simple order processing. Focus on control flow, functions, and basic file I/O to persist inventory.</p>
+          <ul>
+            <li>Languages: Python</li>
+            <li>Concepts: Functions, I/O, state management</li>
+          </ul>
         </section>
 
-        <section class="section">
-          <h2>Experience</h2>
-          <div class="no-exp">
-            <strong>No professional experience yet.</strong>
-            <p class="muted">Open to internships, research assistant roles, or volunteer projects to build practical experience.</p>
-          </div>
+        <section>
+          <h4 class="section-title">Experience</h4>
+          <p><strong>No professional experience yet.</strong></p>
+          <p class="text-muted">Open to internships, research assistant roles, or volunteer projects to build practical experience.</p>
         </section>
 
-        <section class="section">
-          <h2>Additional</h2>
-          <div class="two-col">
-            <div>
-              <h3 style="margin:0 0 8px 0">Interests</h3>
-              <p class="muted" style="margin:0">Machine Learning, Data Science, Automation</p>
-            <div>
-              
-            </div>
-          </div>
+        <section>
+          <h4 class="section-title">Additional</h4>
+          <h6>Interests</h6>
+          <p class="text-muted">Machine Learning, Data Science, Automation</p>
         </section>
-
-        <footer>
-         
-        </footer>
-
       </div>
     </div>
+
+    <footer>
+      © 2025 Mushtaq Ahmad · All rights reserved
+    </footer>
   </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
